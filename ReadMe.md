@@ -1,6 +1,7 @@
 # Aakash Ram Chandran — ML Engineer & Researcher
 
-Hamburg, Germany | aakashramchandran@gmail.com
+Hamburg, Germany 
+aakashramchandran@gmail.com
 
 ML Engineer with research experience in designing RL and optimization 
 algorithms and 2+ years deploying production ML systems at scale.
@@ -9,7 +10,7 @@ algorithms and 2+ years deploying production ML systems at scale.
 hybrids) at Fraunhofer IIS. Policy optimization via imitation learning (M.Sc. 
 thesis, FAU Erlangen-Nurnberg).
 
-**Production:** End-to-end ML pipelines on GCP — training, inference 
+**Production:** End-to-end ML pipelines on GCP training, inference 
 optimization (TensorRT, ONNX), edge deployment (NVIDIA Jetson), and monitoring 
 (MLflow, Grafana).
 
