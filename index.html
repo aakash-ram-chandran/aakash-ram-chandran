@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aakash Ram Chandran — ML Engineer</title>
+  <meta name="description" content="Machine Learning Engineer working on computer vision and robotics systems. Based in Hamburg.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#" class="header-name">Aakash Ram Chandran</a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Aakash Ram<br>Chandran</h1>
+      <p class="hero-sub">Machine Learning Engineer &middot; Hamburg</p>
+      <p class="hero-tagline">
+        Working on computer vision and robotics systems.<br>
+        Currently building perception infrastructure at a medical robotics startup.
+      </p>
+      <div class="hero-links">
+        <a href="https://www.linkedin.com/in/aakash-ram-chandran-0a4702129/" target="_blank" rel="noopener">LinkedIn &nearr;</a>
+        <a href="https://github.com/aakash-ram-chandran" target="_blank" rel="noopener">GitHub &nearr;</a>
+        <a href="mailto:aakashramchandran@gmail.com">Email &nearr;</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section">
+      <h2 class="section-label">About</h2>
+      <p>
+        ML Engineer with a background in computer vision, robotics, and production systems.
+        Work spans model training, edge deployment, and the infrastructure around both.
+        Academic background covers reinforcement learning, HPC, and numerical methods alongside
+        the core ML and CV coursework.
+      </p>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <h2 class="section-label">Work</h2>
+
+      <div class="entry">
+        <div class="entry-meta">
+          <div class="entry-left">
+            <span class="entry-company">Bahead GmbH</span>
+            <span class="entry-title">Machine Learning Engineer</span>
+            <span class="entry-location">Hamburg, Germany</span>
+          </div>
+          <span class="entry-date">May 2024 to present</span>
+        </div>
+        <ul>
+          <li>Responsible for the full ML stack at a medical robotics startup. Covers perception models for object detection and pose estimation, edge deployment on NVIDIA Jetson Orin via TensorRT, and integration with the robot's ROS2 and PyTrees control system.</li>
+          <li>Built the data infrastructure from scratch. Synthetic generation runs in Isaac Sim on GCP, annotation in Label Studio, real world collection with Rerun, and a retraining loop that mixes both data sources.</li>
+          <li>Set up the CI/CD pipeline with a self hosted runner on the robot itself. Production monitoring with Grafana and InfluxDB. Model versioning in MLflow. Docker Compose handles orchestration on the edge device.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta">
+          <div class="entry-left">
+            <span class="entry-company">Fraunhofer IIS</span>
+            <span class="entry-title">Research Assistant</span>
+            <span class="entry-location">Nuremberg, Germany</span>
+          </div>
+          <span class="entry-date">Aug 2023 to Mar 2024</span>
+        </div>
+        <ul>
+          <li>Built simulation environments and tested RL approaches on a real job shop scheduling problem from Datev GmbH. Compared DQN, PPO, and classical baselines across repeatable evaluation runs.</li>
+          <li>Designed hybrid Transformer GNN architectures for graph structured scheduling data. These generalised better to unseen problem instances than standard RL policies.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta">
+          <div class="entry-left">
+            <span class="entry-company">Schaeffler AG</span>
+            <span class="entry-title">Intern</span>
+            <span class="entry-location">Herzogenaurach, Germany</span>
+          </div>
+          <span class="entry-date">Oct 2022 to Mar 2023</span>
+        </div>
+        <ul>
+          <li>Worked on robot programming and 3D camera evaluation. Built test applications on a UR Cobot and IGUS REBEL arm. Presented findings to engineering leadership.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta">
+          <div class="entry-left">
+            <span class="entry-company">FAU Erlangen-N&uuml;rnberg</span>
+            <span class="entry-title">Student Assistant, Autonomous Systems and Mechatronics</span>
+          </div>
+          <span class="entry-date">Aug 2021 to Mar 2022</span>
+        </div>
+        <ul>
+          <li>Robot programming in Python and ROS under Prof. Dr.-Ing. Philipp Beckerle. Worked on safety concepts for Franka Emika robot operation.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="section-label">Projects</h2>
+
+      <div class="entry">
+        <div class="entry-meta">
+          <div class="entry-left">
+            <span class="entry-company">Master Thesis</span>
+            <span class="entry-title">AI approaches for robotic handling of electric motor components</span>
+            <span class="entry-location">FAPS Institute, FAU Erlangen-N&uuml;rnberg</span>
+          </div>
+          <span class="entry-date">2023 to 2024</span>
+        </div>
+        <ul>
+          <li>Practical comparison of AI approaches for robotic pick and place in a real industrial setting. Covered behaviour cloning, MIRAI and CEILing imitation learning, and 6D pose estimation with GDRNPP. Each method was evaluated under the same conditions on actual hardware.</li>
+          <li>Trained policies across multiple GPUs using PyTorch with distributed training. Tracked all experiments in MLflow and Weights and Biases.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta">
+          <div class="entry-left">
+            <span class="entry-company">LULESH HPC Analysis</span>
+            <span class="entry-title">MPI scaling, memory profiling, and vectorisation analysis</span>
+            <span class="entry-location">Fritz cluster, NHR@FAU</span>
+          </div>
+          <span class="entry-date">2022 to 2023</span>
+        </div>
+        <ul>
+          <li>Benchmarked the LULESH C++ shock hydrodynamics application on a Tier3 HPC cluster using MPI across many nodes. Profiled memory bandwidth and hotspots using Likwid and Intel VTune. Built Roofline models to characterise where the code is bound. Found that AVX512 underperforms AVX2 due to a lower vectorisation ratio on this workload.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="section-label">Skills</h2>
+      <dl class="skills-list">
+        <div class="skill-row">
+          <dt>ML and CV</dt>
+          <dd>PyTorch &middot; Detectron2 &middot; DINOv2 &middot; instance segmentation &middot; object detection &middot; 6D pose estimation &middot; imitation learning &middot; reinforcement learning &middot; OpenCV</dd>
+        </div>
+        <div class="skill-row">
+          <dt>Edge and Deploy</dt>
+          <dd>TensorRT &middot; ONNX &middot; Triton Inference Server &middot; NVIDIA Jetson &middot; GCP &middot; Docker</dd>
+        </div>
+        <div class="skill-row">
+          <dt>Robotics</dt>
+          <dd>ROS2 &middot; PyTrees &middot; Isaac Sim &middot; sim to real &middot; sensor integration</dd>
+        </div>
+        <div class="skill-row">
+          <dt>MLOps</dt>
+          <dd>MLflow &middot; Grafana &middot; InfluxDB &middot; Label Studio &middot; CI/CD &middot; PostgreSQL</dd>
+        </div>
+        <div class="skill-row">
+          <dt>Programming</dt>
+          <dd>Python &middot; C++ &middot; gRPC &middot; Linux &middot; Git &middot; Slurm</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section">
+      <h2 class="section-label">Education</h2>
+
+      <div class="entry">
+        <div class="entry-meta">
+          <div class="entry-left">
+            <span class="entry-company">M.Sc. Computational Engineering</span>
+            <span class="entry-location">FAU Erlangen-N&uuml;rnberg, Germany</span>
+          </div>
+          <span class="entry-date">2020 to 2024</span>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta">
+          <div class="entry-left">
+            <span class="entry-company">B.E. Mechanical Engineering</span>
+            <span class="entry-location">Anna University, India</span>
+          </div>
+          <span class="entry-date">2016 to 2020</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-last">
+      <h2 class="section-label">Contact</h2>
+      <p>Based in Hamburg, Germany.</p>
+      <div class="contact-links">
+        <a href="mailto:aakashramchandran@gmail.com">aakashramchandran@gmail.com</a>
+        <a href="https://www.linkedin.com/in/aakash-ram-chandran-0a4702129/" target="_blank" rel="noopener">LinkedIn &nearr;</a>
+        <a href="https://github.com/aakash-ram-chandran" target="_blank" rel="noopener">GitHub &nearr;</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Aakash Ram Chandran &middot; Hamburg &middot; 2025</p>
+  </footer>
+
+</body>
+</html>
